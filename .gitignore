@@ -23,10 +23,10 @@
 hs_err_pid*
 replay_pid*
 # Игнорируем результаты Allure
-TestClient/target/allure-results/
+TestClient/target/allure-results/*
 
 # Игнорируем стандартные отчеты Maven Surefire (логи тестов)
-TestClient/target/surefire-reports/
+TestClient/target/surefire-reports/*
 
 # На всякий случай игнорируем всю папку target (там только временные файлы сборки)
-TestClient/target/
+TestClient/target/*
