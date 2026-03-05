@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.barnik.PostgresCheckTest.PostgresCheckTest" time="10.699" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.barnik.PostgresCheckTest.PostgresCheckTest" time="23.796" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin"/>
-    <property name="sun.java.command" value="C:\Users\Никита\AppData\Local\Temp\surefire15024959071969026851\surefirebooter-20260305145549350_3.jar C:\Users\Никита\AppData\Local\Temp\surefire15024959071969026851 2026-03-05T14-55-49_187-jvmRun1 surefire-20260305145549350_1tmp surefire_0-20260305145549350_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Никита\AppData\Local\Temp\surefire4948152141989974128\surefirebooter-20260305180830407_3.jar C:\Users\Никита\AppData\Local\Temp\surefire4948152141989974128 2026-03-05T18-08-30_233-jvmRun1 surefire-20260305180830407_1tmp surefire_0-20260305180830407_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\REPO_JAVA\Test_Pool_in_Test_Containers\target\test-classes;D:\REPO_JAVA\Test_Pool_in_Test_Containers\target\classes;C:\Users\Никита\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\Никита\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\Никита\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Никита\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\Никита\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\Никита\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\Никита\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Никита\.m2\repository\org\testcontainers\testcontainers\2.0.3\testcontainers-2.0.3.jar;C:\Users\Никита\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Никита\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\Никита\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\Никита\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\Никита\.m2\repository\org\rnorth\duct-tape\duct-tape\1.0.8\duct-tape-1.0.8.jar;C:\Users\Никита\.m2\repository\org\jetbrains\annotations\17.0.0\annotations-17.0.0.jar;C:\Users\Никита\.m2\repository\com\github\docker-java\docker-java-api\3.7.0\docker-java-api-3.7.0.jar;C:\Users\Никита\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Никита\.m2\repository\com\github\docker-java\docker-java-transport-zerodep\3.7.0\docker-java-transport-zerodep-3.7.0.jar;C:\Users\Никита\.m2\repository\com\github\docker-java\docker-java-transport\3.7.0\docker-java-transport-3.7.0.jar;C:\Users\Никита\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\Никита\.m2\repository\org\testcontainers\testcontainers-postgresql\2.0.2\testcontainers-postgresql-2.0.2.jar;C:\Users\Никита\.m2\repository\org\testcontainers\testcontainers-jdbc\2.0.2\testcontainers-jdbc-2.0.2.jar;C:\Users\Никита\.m2\repository\org\testcontainers\testcontainers-database-commons\2.0.2\testcontainers-database-commons-2.0.2.jar;C:\Users\Никита\.m2\repository\org\postgresql\postgresql\42.2.24\postgresql-42.2.24.jar;C:\Users\Никита\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Никита\.m2\repository\io\qameta\allure\allure-junit5\2.24.0\allure-junit5-2.24.0.jar;C:\Users\Никита\.m2\repository\io\qameta\allure\allure-junit-platform\2.24.0\allure-junit-platform-2.24.0.jar;C:\Users\Никита\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Никита\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Никита\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\Никита\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\Никита\.m2\repository\org\slf4j\slf4j-simple\2.0.13\slf4j-simple-2.0.13.jar;C:\Users\Никита\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Никита\AppData\Local\Temp\surefire15024959071969026851\surefirebooter-20260305145549350_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Никита\AppData\Local\Temp\surefire4948152141989974128\surefirebooter-20260305180830407_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Oracle\dbhomeXE\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-25\bin;C:\Users\Никита\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\Никита\AppData\Local\Programs\Python\Python314\;C:\Users\Никита\AppData\Local\Microsoft\WindowsApps;C:\Users\Никита\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2025.2.5\bin;C:\TOOLS;C:\ProgramFiles\Git\bin;C:\TOOLS\allure\bin;C:\Program Files\Apache NetBeans\bin\;."/>
+    <property name="java.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Oracle\dbhomeXE\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-25\bin;C:\Users\Никита\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\Никита\AppData\Local\Programs\Python\Python314\;C:\Users\Никита\AppData\Local\Microsoft\WindowsApps;C:\Users\Никита\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2025.2.5\bin;C:\TOOLS;C:\ProgramFiles\Git\bin;C:\TOOLS\allure\bin;;C:\Program Files\Apache NetBeans\bin\;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1251"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
@@ -61,12 +61,223 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testSystemIntegration" classname="com.barnik.PostgresCheckTest.PostgresCheckTest" time="10.609">
-    <system-out><![CDATA[=== Step1 1: Run database... ===
+  <testcase name="testSystemIntegration(TestConfig)[1]" classname="com.barnik.PostgresCheckTest.PostgresCheckTest" time="23.648">
+    <failure message="Должно быть ровно 2 успеха(ов) по размеру пула ==&gt; expected: &lt;2&gt; but was: &lt;4&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Должно быть ровно 2 успеха(ов) по размеру пула ==> expected: <2> but was: <4>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at com.barnik.PostgresCheckTest.PostgresCheckTest.lambda$RunTests$15(PostgresCheckTest.java:271)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at com.barnik.PostgresCheckTest.PostgresCheckTest.lambda$RunTests$5(PostgresCheckTest.java:270)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at com.barnik.PostgresCheckTest.PostgresCheckTest.RunTests(PostgresCheckTest.java:204)
+	at com.barnik.PostgresCheckTest.PostgresCheckTest.testSystemIntegration(PostgresCheckTest.java:420)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestTemplateMethod(TimeoutExtension.java:94)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:142)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.lambda$execute$2(TestTemplateTestDescriptor.java:110)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Collections$2.tryAdvance(Collections.java:5182)
+	at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5190)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:803)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at java.base/java.util.stream.ReferencePipeline$7$1FlatMap.accept(ReferencePipeline.java:293)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:110)
+	at org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor.execute(TestTemplateTestDescriptor.java:44)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[>>> [CONFIG] Read file: D:\REPO_JAVA\Test_Pool_in_Test_Containers\src\test\resources\context.xml
+>>> [CONFIG] Parameters has been updated successfully: maxTotal = 2, maxWaitMillis = 10000
+=== Step1 1: Run database... ===
 === Step 2: Run Tomcat 9... ===
 === System is ready for test. ===
-URL of servlet: http://localhost:64074
-=== Test is finished. Deletion of containers. ===
+URL of servlet: http://localhost:59818
+>>> [DYNAMIC URL] http://localhost:59818/MyServletProject/MyServlet
+
+>>> Test run (Time start: 0s)
+
+[HTTP RESPONSE DEBUG] Request ID: 1
+Status Code: 200
+Body: <html><head><title>User List</title></head><body>
+<h1>Hi, Bro! This is servlet. I am running...</h1><br><br>
+<ul>
+<li>Name: InternetTelecom</li>
+<li>Name: Terayon</li>
+</ul>
+<br><br><p>Current time: Thu Mar 05 15:08:49 UTC 2026</p>
+</body></html>
+
+----------------------
+
+[HTTP RESPONSE DEBUG] Request ID: 2
+Status Code: 200
+Body: <html><head><title>User List</title></head><body>
+<h1>Hi, Bro! This is servlet. I am running...</h1><br><br>
+<ul>
+<li>Name: InternetTelecom</li>
+<li>Name: Terayon</li>
+</ul>
+<br><br><p>Current time: Thu Mar 05 15:08:49 UTC 2026</p>
+</body></html>
+
+----------------------
+
+[HTTP RESPONSE DEBUG] Request ID: 4
+Status Code: 200
+Body: <html><head><title>User List</title></head><body>
+<h1>Hi, Bro! This is servlet. I am running...</h1><br><br>
+<ul>
+<li>Name: InternetTelecom</li>
+<li>Name: Terayon</li>
+</ul>
+<br><br><p>Current time: Thu Mar 05 15:08:54 UTC 2026</p>
+</body></html>
+
+----------------------
+
+[HTTP RESPONSE DEBUG] Request ID: 3
+Status Code: 200
+Body: <html><head><title>User List</title></head><body>
+<h1>Hi, Bro! This is servlet. I am running...</h1><br><br>
+<ul>
+<li>Name: InternetTelecom</li>
+<li>Name: Terayon</li>
+</ul>
+<br><br><p>Current time: Thu Mar 05 15:08:54 UTC 2026</p>
+</body></html>
+
+----------------------
+
+======= Detail report =======
+Request #1 | Start on 0 sec | Duration 5 sec | StatusHttp: 200 | TimeoutError: 0 | MaxWait: 10000 | Sleep: 5000 
+Request #2 | Start on 0 sec | Duration 5 sec | StatusHttp: 200 | TimeoutError: 0 | MaxWait: 10000 | Sleep: 5000 
+Request #3 | Start on 0 sec | Duration 10 sec | StatusHttp: 200 | TimeoutError: 0 | MaxWait: 10000 | Sleep: 5000 
+Request #4 | Start on 0 sec | Duration 10 sec | StatusHttp: 200 | TimeoutError: 0 | MaxWait: 10000 | Sleep: 5000 
+DEBUG: Success: 4, Taimouts: 0
 ]]></system-out>
     <system-err><![CDATA[[main] INFO org.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
 [main] INFO org.testcontainers.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
@@ -82,195 +293,62 @@ URL of servlet: http://localhost:64074
   Labels: 
     com.docker.desktop.address=npipe://\\.\pipe\docker_cli
 [main] INFO tc.testcontainers/ryuk:0.13.0 - Creating container for image: testcontainers/ryuk:0.13.0
-[main] INFO tc.testcontainers/ryuk:0.13.0 - Container testcontainers/ryuk:0.13.0 is starting: d8b96c4f8a45802affe979f65fbc2ae1710c78938980faf2be7697a7ee1670f5
-[main] INFO tc.testcontainers/ryuk:0.13.0 - Container testcontainers/ryuk:0.13.0 started in PT1.0994326S
+[main] INFO tc.testcontainers/ryuk:0.13.0 - Container testcontainers/ryuk:0.13.0 is starting: c4217513e01514921da93382987f102c785a1f6b47fb759532e7744ab72d06da
+[main] INFO tc.testcontainers/ryuk:0.13.0 - Container testcontainers/ryuk:0.13.0 started in PT1.2609857S
 [main] INFO org.testcontainers.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
 [main] INFO org.testcontainers.DockerClientFactory - Checking the system...
 [main] INFO org.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
 [main] INFO tc.postgres:15-alpine - Creating container for image: postgres:15-alpine
-[main] INFO tc.postgres:15-alpine - Container postgres:15-alpine is starting: 97d4de3945d1fd014f97650446fc7941083ca6101768b5841f0714dcc45232aa
-[main] INFO tc.postgres:15-alpine - Container postgres:15-alpine started in PT3.4162566S
-[main] INFO tc.postgres:15-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:64072/test?loggerLevel=OFF)
+[main] INFO tc.postgres:15-alpine - Container postgres:15-alpine is starting: 05ca6818b405c177598d74b18e888e6782a0d665c03d1e15643cf184f54de287
+[main] INFO tc.postgres:15-alpine - Container postgres:15-alpine started in PT4.10175S
+[main] INFO tc.postgres:15-alpine - Container is started (JDBC URL: jdbc:postgresql://localhost:59816/test?loggerLevel=OFF)
 [main] INFO org.testcontainers.ext.ScriptUtils - Executing database script from init.sql
-[main] INFO org.testcontainers.ext.ScriptUtils - Executed database script from init.sql in 293 ms.
+[main] INFO org.testcontainers.ext.ScriptUtils - Executed database script from init.sql in 232 ms.
 [main] INFO tc.tomcat:9.0.115-jdk11-corretto - Creating container for image: tomcat:9.0.115-jdk11-corretto
-[main] INFO tc.tomcat:9.0.115-jdk11-corretto - Container tomcat:9.0.115-jdk11-corretto is starting: db4d41d3d2e334cdfacf27fce0adc239dfb14f34957ebe085c7ab13dbaac3f88
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.115
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.549 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 21 2026 08:17:26 UTC
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.552 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.115.0
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.6.87.2-microsoft-standard-WSL2
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-amazon-corretto
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.30+7-LTS
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.557 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.579 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.580 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.581 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.583 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.585 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.596 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.5] using APR version [1.7.2].
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.597 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.598 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:58.604 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1zf  3 Feb 2026]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.225 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.302 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1110] milliseconds
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.410 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.410 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.115]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.451 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/MyServletProject.war]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.472 SEVERE [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [35] column [30]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 	org.xml.sax.SAXParseException; systemId: file:/usr/local/tomcat/conf/context.xml; lineNumber: 35; columnNumber: 30; Attribute "password" was already specified for element "Resource".
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1518)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:729)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:594)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:937)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:123)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:155)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:608)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1010)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1858)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:82)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:814)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:465)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:726)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:82)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:209)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:872)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.Catalina.start(Catalina.java:736)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.476 SEVERE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for [/MyServletProject]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 	org.xml.sax.SAXParseException; systemId: file:/usr/local/tomcat/conf/context.xml; lineNumber: 35; columnNumber: 30; Attribute "password" was already specified for element "Resource".
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1518)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:729)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:594)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:937)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:123)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:155)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:608)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1010)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1858)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:82)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:814)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:465)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1576)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:309)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:726)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:82)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:209)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:872)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.Catalina.start(Catalina.java:736)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.478 SEVERE [main] org.apache.catalina.startup.ContextConfig.processContextConfig Occurred at line [35] column [30]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.482 WARNING [main] org.apache.tomcat.util.digester.Digester.endElement No rules found matching [Context/Context/Resource]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.482 WARNING [main] org.apache.tomcat.util.digester.Digester.endElement No rules found matching [Context/Context]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.736 SEVERE [main] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.836 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.847 SEVERE [main] org.apache.catalina.core.StandardContext.startInternal Context [/MyServletProject] startup failed due to previous errors
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.861 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/MyServletProject.war] has finished in [410] ms
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.869 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
-[docker-java-stream--1778398714] INFO TOMCAT - STDERR: 05-Mar-2026 11:55:59.898 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [596] milliseconds
-[main] INFO tc.tomcat:9.0.115-jdk11-corretto - Container tomcat:9.0.115-jdk11-corretto started in PT2.9042409S
+[main] INFO tc.tomcat:9.0.115-jdk11-corretto - Container tomcat:9.0.115-jdk11-corretto is starting: 4da03f82ee6eb8e475ac6b2a10a0c2db3bb2f118ae0f2b8b24d9f58671f71079
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.115
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 21 2026 08:17:26 UTC
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.115.0
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.903 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.6.87.2-microsoft-standard-WSL2
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-amazon-corretto
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.30+7-LTS
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.907 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.944 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.970 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.5] using APR version [1.7.2].
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.970 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.971 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:41.984 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1zf  3 Feb 2026]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:42.596 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:42.663 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1138] milliseconds
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:42.763 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:42.763 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.115]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:42.792 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/MyServletProject.war]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:43.552 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:43.628 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/MyServletProject.war] has finished in [836] ms
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:43.645 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+[docker-java-stream--1777921221] INFO TOMCAT - STDERR: 05-Mar-2026 15:08:43.665 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1001] milliseconds
+[main] INFO tc.tomcat:9.0.115-jdk11-corretto - Container tomcat:9.0.115-jdk11-corretto started in PT3.7642366S
 ]]></system-err>
   </testcase>
 </testsuite>
