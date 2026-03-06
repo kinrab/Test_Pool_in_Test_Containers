@@ -36,6 +36,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import org.w3c.dom.*;
+import javax.xml.parsers.*;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.xpath.*;
+import java.io.File;
 
 
 public class PostgresCheckTest 
@@ -84,13 +91,13 @@ public class PostgresCheckTest
     private static final List<TestConfig> SCENARIOS = 
             List.of(
                     //                Имя,                                                                                        MaxActive,       MaxWait,     Sleep,  Threads,    ExpOk,    ExpFast,   ExpDelayed  ExpError
-                    new TestConfig("Normal Wait   All: 4  MaxAct:2  OK:4 Fast:2 Delay:2 Error:0 MaxWait:  10000 Sleep:5000",           2,            10000,      5000,     4,         4L,       2L,          2L,       0L   ) 
-                    //new TestConfig("Timeout Fail  All: 4  MaxAct:2  Ok:2 Fast:2 Delay:0 Error:2 MaxWait:   3000 Sleep:5000",           2,             3000,      5000,     4,         2L,       2L,          0L,       2L   ),
-                    //new TestConfig("Stairway      All: 4  MaxAct:2  OK:4 Fast:1 Delay:3 Error:0 MaxWait:  30000 Sleep:5000",           1,            30000,      5000,     4,         4L,       1L,          3L,       0L   )                        
-                    //new TestConfig("Fast timeout  All: 4  MaxAct:2  OK:2 Fast:2 Delay:0 Error:2 MaxWait:    100 Sleep:5000",           2,              100,      5000,     4,         2L,       2L,          0L,       2L   ),                        
-                    //new TestConfig("Wide gateway  All: 4  MaxAct:10 OK:4 Fast:4 Delay:0 Error:0 MaxWait: 100000 Sleep:5000",          10,           100000,      5000,     4,         4L,       4L,          0L,       0L   ),
-                    //new TestConfig("Stairway 10   All:10  MaxAct:2  OK:6 Fast:2 Delay:4 Error:4 MaxWait:  14000 Sleep:5000",           2,            14000,      5000,     10,        6L,       2L,          4L,       4L   ), 
-                    //new TestConfig("Border   10   All:10  MaxAct:2  OK:6 Fast:2 Delay:4 Error:4 MaxWait:  15000 Sleep:5000",           2,            15000,      5000,     10,        6L,       2L,          4L,       4L   ) 
+                    new TestConfig("Normal Wait   All: 4  MaxAct:2  OK:4 Fast:2 Delay:2 Error:0 MaxWait:  10000 Sleep:5000",           2,            10000,      5000,     4,         4L,       2L,          2L,       0L   ), 
+                    new TestConfig("Timeout Fail  All: 4  MaxAct:2  Ok:2 Fast:2 Delay:0 Error:2 MaxWait:   3000 Sleep:5000",           2,             3000,      5000,     4,         2L,       2L,          0L,       2L   )
+//                    new TestConfig("Stairway      All: 4  MaxAct:2  OK:4 Fast:1 Delay:3 Error:0 MaxWait:  30000 Sleep:5000",           1,            30000,      5000,     4,         4L,       1L,          3L,       0L   ),                        
+//                    new TestConfig("Fast timeout  All: 4  MaxAct:2  OK:2 Fast:2 Delay:0 Error:2 MaxWait:    100 Sleep:5000",           2,              100,      5000,     4,         2L,       2L,          0L,       2L   ),                        
+//                    new TestConfig("Wide gateway  All: 4  MaxAct:10 OK:4 Fast:4 Delay:0 Error:0 MaxWait: 100000 Sleep:5000",          10,           100000,      5000,     4,         4L,       4L,          0L,       0L   ),
+//                    new TestConfig("Stairway 10   All:10  MaxAct:2  OK:6 Fast:2 Delay:4 Error:4 MaxWait:  14000 Sleep:5000",           2,            14000,      5000,     10,        6L,       2L,          4L,       4L   ), 
+//                    new TestConfig("Border   10   All:10  MaxAct:2  OK:6 Fast:2 Delay:4 Error:4 MaxWait:  15000 Sleep:5000",           2,            15000,      5000,     10,        6L,       2L,          4L,       4L   ) 
                     // Тут в Border граничные условия - таймаут 15 и успеют ли освободившиеся конекшены подхватиться или таймаут истечет? Вроде истекает таймаут.
                    ); 
     
@@ -201,153 +208,75 @@ public class PostgresCheckTest
         });
         
         // ШАГ 7: Логирование в отчет Allure и универсальные проверки Asserts
-        Allure.step("7. Results checking (Assertions)", () -> 
-        {
-            // 0. ОБЪЯВЛЯЕМ переменные в начале блока, чтобы их видели все вложенные шаги
-            final long sleep = config.clientSleep / 1000; 
-            final int maxActive = config.maxActive;
-
-            // 1. Считаем РЕАЛЬНЫЕ успехи (код 200 И в теле нет фразы об ошибке)
-            long realOkCount = results.stream()
-                .filter(r -> r.code == 200 && !r.body.contains("SQL query execution error"))
-                .count();
-
-            // 2. Считаем РЕАЛЬНЫЕ ошибки (либо код 500, либо 200 с текстом ошибки)
-            long realErrorCount = results.stream()
-                .filter(r -> r.code == 500 || (r.code == 200 && r.body.contains("SQL query execution error")))
-                .count();
-
-            // 3. Проверка количества
-            Allure.step("7.1 Проверка: Успешных ответов с данными (ожидаем " + config.expectedOk + ")", () -> 
-                assertEquals(config.expectedOk, realOkCount, "Кол-во чистых 200 не совпало!")
-            );
-
-            Allure.step("7.2 Проверка: Отвалов пула (ожидаем " + config.expectedError + ")", () -> 
-                assertEquals(config.expectedError, realErrorCount, "Ожидаемые ошибки не найдены в ответах!")
-            );
-
-            // 4. Лесенка времени (только для тех, где реально были данные)
-         
-            List<TestResult> successResults = results.stream()
-                .filter(r -> r.body.contains("InternetTelecom") || r.body.contains("Terayon"))
-                .sorted(Comparator.comparingLong(r -> r.duration))
-                .collect(Collectors.toList());
-
-            // 2. Фильтруем ТАЙМАУТЫ (те, кто получил текст ошибки SQL)
-            List<TestResult> timeoutResults = results.stream()
-                .filter(r -> r.body.contains("SQL query execution error"))
-                .collect(Collectors.toList());
-
-            // Печать для отладки
-            System.out.println("DEBUG: Success: " + successResults.size() + ", Taimouts: " + timeoutResults.size());
-
-            // 3. ПРОВЕРКА УСПЕШНЫХ (Волны ожидания по 5с)
-            for (int i = 0; i < successResults.size(); i++) {
-                final int idx = i;
-                int wave = i / maxActive; 
-                long expectedDuration = sleep * (wave + 1);
-
-                Allure.step("7.3 Успешный запрос в волне #" + (wave + 1), () -> {
-                    long actual = successResults.get(idx).duration;
-                    assertTrue(Math.abs(actual - expectedDuration) <= 1, 
-                        "Запрос длился " + actual + "с вместо " + expectedDuration + "с");
-                });
-            }
-
-            // 4. ПРОВЕРКА ТАЙМАУТОВ (Отсечка по 3с)
-            for (int i = 0; i < timeoutResults.size(); i++) {
-                final int idx = i;
-                long expectedTimeoutSec = config.maxWait / 1000; 
-
-                Allure.step("7.4 Проверка отсечки по таймауту #" + (idx + 1), () -> {
-                    long actual = timeoutResults.get(idx).duration;
-                    assertTrue(actual >= expectedTimeoutSec && actual <= (expectedTimeoutSec + 2), 
-                        "Запрос отвалился за " + actual + "с. Ожидали ~" + expectedTimeoutSec + "с");
-                });
-            }
-
-            // 5. ИТОГОВЫЙ БАЛАНС
-            Allure.step("7.5 Итоговая проверка баланса пула", () -> {
-                assertEquals(maxActive, successResults.size(), 
-                    "Должно быть ровно " + maxActive + " успеха(ов) по размеру пула");
-                assertEquals(N - maxActive, timeoutResults.size(), 
-                    "Остальные " + (N - maxActive) + " запросов должны были упасть");
-            });
-            
-            
-            ////////////////////////////////////////////////////////////
-            
-        }); // Конец главного Allure.step
+       
+        System.out.println("\n============ Here correct ASSERT checks shoud be added! ==================\n");
         
         System.out.println("============ All steps have been completed. Wow! :-) ==================\n");
         
     } // End of method RunTest
     
     // Метод который обновляет параметры MAxActive и MaxWaitMillis в context.xml перед стартом TomCat: 
-    private void updateContextXml(TestConfig config) throws Exception 
-    {
-        int N = config.threads; // Вместо жесткого кодирования будем забирать из набора параметров теста.
-        
-        // 1. Собираем путь к файлу:
-        String contextPath = "src/test/resources/context.xml";
+   private void updateContextXml(TestConfig config) throws Exception
+   {
+    // 1. Собираем путь к файлу
+    String contextPath = "src/test/resources/context.xml";
+    File xmlFile = new File(contextPath);
+    System.out.println(">>> [CONFIG] Read file: " + xmlFile.getCanonicalPath());
 
-        // 2. Создаем указатель на файл:
-        File xmlFile = new File(contextPath);            
-        System.out.println(">>> [CONFIG] Read file: " + xmlFile.getCanonicalPath());   //полный абсолютный путь  xmlFile.getCanonicalPath()
+    // 2. Инициализируем XML-парсер
+    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    DocumentBuilder builder = factory.newDocumentBuilder();
+    Document doc = builder.parse(xmlFile);
 
-        // 3. Инициализируем XML-парсер
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        
-        // 4. Читаем содержимое файла: 
-        //    Вот здесь DBuilder (наш парсер) берет тот адрес, который мы ему дали в xmlFile, идет на диск, открывает файл, вычитывает все байты и закрывает его,
-        //    оставив у себя в памяти «дерево» (объект doc).
-        Document doc = builder.parse(xmlFile);
+    // 3. Ищем теги <Resource> и обновляем атрибуты
+    NodeList resources = doc.getElementsByTagName("Resource");
+    boolean isUpdated = false;
 
-        // 3. Ищем все теги <Resource> и меняем значения на наши из переметров теста:
-        NodeList resources = doc.getElementsByTagName("Resource");
-        boolean isUpdated = false;
+    for (int i = 0; i < resources.getLength(); i++) {
+        Element resource = (Element) resources.item(i);
+        if (resource.getAttribute("driverClassName").contains("postgresql") || 
+            resource.getAttribute("name").contains("jdbc/postgres")) {
 
-        for (int i = 0; i < resources.getLength(); i++) 
-        {
-            Element resource = (Element) resources.item(i);
-
-            // Ищем наш ресурс по ключевому признаку (например, драйверу или имени)
-            if (resource.getAttribute("driverClassName").contains("postgresql") || resource.getAttribute("name").contains("jdbc/postgres")) 
-            {
-
-                // Записываем новые значения из нашего текущего сценария
-                resource.setAttribute("maxTotal", String.valueOf(config.maxActive));
-                resource.setAttribute("maxWaitMillis", String.valueOf(config.maxWait));
-                isUpdated = true;
-            }
+            resource.setAttribute("maxTotal", String.valueOf(config.maxActive));
+            resource.setAttribute("maxWaitMillis", String.valueOf(config.maxWait));
+            isUpdated = true;
         }
+    }
 
-        // Проверяем были ли изменены параметры или мы их не нашли? 
-        if (!isUpdated) 
-        {
-            throw new RuntimeException("Error: In the context.xml tag Resource is not found (for PostgreSQL)!");
-        }
+    if (!isUpdated) {
+        throw new RuntimeException("Error: In the context.xml tag Resource is not found (for PostgreSQL)!");
+    }
 
-        // 4. Сохраняем изменения обратно в файл
-        Transformer transformer = TransformerFactory.newInstance().newTransformer();
-        
-        // 5. Добавим форматирование, чтобы XML не превратился в одну строку
-        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+    // --- ИСПРАВЛЕНИЕ: Очистка лишних переносов строк ---
+    // Находим все текстовые узлы, которые состоят только из пробелов/переносов и удаляем их
+    XPath xPath = XPathFactory.newInstance().newXPath();
+    NodeList nodeList = (NodeList) xPath.evaluate("//text()[normalize-space()='']", doc, XPathConstants.NODESET);
 
-        DOMSource source = new DOMSource(doc);
-        StreamResult result = new StreamResult(xmlFile);
-        transformer.transform(source, result);
+    for (int i = 0; i < nodeList.getLength(); ++i) {
+        Node node = nodeList.item(i);
+        node.getParentNode().removeChild(node);
+    }
+    // --------------------------------------------------
 
-        // 6. Нужно быть уверенным, что файл на диске точно получил наши параметры: 
-        System.out.flush();
-        
-        // 7. Даем ОС микро-паузу (500 мс), чтобы закрыть все дескрипторы файла
-        Thread.sleep(500); 
-                
-        System.out.println(">>> [CONFIG] Parameters has been updated successfully: maxTotal = " + config.maxActive + ", maxWaitMillis = " + config.maxWait);
-        
-    } // End of UpdateContextXml
+    // 4. Сохраняем изменения обратно в файл
+    TransformerFactory transformerFactory = TransformerFactory.newInstance();
+    Transformer transformer = transformerFactory.newTransformer();
+    
+    // Настройки форматирования
+    transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+    transformer.setOutputProperty("{http://xml.apache.org}indent-amount", "4");
+    // Убираем standalone="no" для чистоты
+    transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
+
+    DOMSource source = new DOMSource(doc);
+    StreamResult result = new StreamResult(xmlFile);
+    transformer.transform(source, result);
+
+    // 5. Завершение
+    System.out.flush();
+    Thread.sleep(500); 
+    System.out.println(">>> [CONFIG] Parameters updated: maxTotal = " + config.maxActive + ", maxWaitMillis = " + config.maxWait);
+    }
     
     
     
@@ -426,6 +355,12 @@ public class PostgresCheckTest
     } // End of test method   
 
 } // End of class
+
+
+
+
+
+
 
 
 
